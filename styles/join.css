@@ -1,0 +1,281 @@
+body {
+  padding-bottom: 50px;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.left-section {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header2 {
+  display: flex;
+  width: 100%;
+  align-self: center;
+  justify-content: space-around;
+  padding: 5px 20px;
+  background-color: white;
+}
+
+.product-categories-drop-down {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  column-gap: 5px;
+  color: black;
+  position: relative;
+}
+
+.header2  ul{
+  display: flex;
+  justify-content: center;
+  column-gap: 70px;
+  
+}
+
+.header2  ul li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.header2  ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.join-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 200px;
+  box-sizing: border-box;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+.login-container, .register-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.login-container {
+  border-right: 1px solid rgba(0, 0, 0, 0.112);
+}
+
+.register-container {
+  border-left: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.login-container h2, .register-container h2 {
+  font-size: 25px;
+  font-weight: 600;
+  width: 75%;
+  margin-bottom: 0;
+}
+
+.login-container form, .register-container form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 75%;
+}
+
+.login-container form .login-password-container, .register-container form  .register-password-container{
+  display: flex;
+  position: relative;
+}
+
+.login-container form input , .register-container form input{
+  padding: 15px 15px;
+  font-size: 18px;
+  outline: 0;
+  border: solid white 2px;
+}
+
+
+.login-container form .login-password-container input, 
+.register-container form .register-password-container input {
+  width: 100%;
+  outline: 0;
+  border: solid white px;
+}
+
+.login-container  .login-options {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  font-size: 18px;
+}
+
+.login-option1
+input {
+  cursor: pointer;
+}
+.login-option2  {
+  color: rgb(0, 72, 255);
+  cursor: pointer;
+}
+.login-option2:hover {
+  text-decoration: underline;
+}
+
+.login-button, .register-button {
+  width: 75%;
+}
+
+.login-button button, .register-button button {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media (min-width: 651px) and (max-width: 900px) {
+    
+  .join-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 12%;
+    margin-left: 12%;
+    row-gap: 50px;
+    width: 76%;
+  }
+    
+  .login-container, .register-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    width: 100%;
+    border: none;
+  }
+
+  .header2 {
+    display: none;
+  }
+  
+  .register-container {
+    border-top: 1px solid rgba(0, 0, 0, 0.116);
+  }
+
+    
+  .left-section {
+    margin-left: 40px;
+  }
+
+}  
+
+@media (max-width: 399px) {
+  .header2  ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    width: 100%;
+  }
+
+  .join-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-left: auto;
+    row-gap: 30px;
+    width: 100%;
+    margin-top: 65px;
+  }
+
+    
+  .login-container, .register-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    width: 100%;
+    border: none;
+  ;
+  }
+
+  .login-container h2, .register-container h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  
+  .login-container form, .register-container form {
+
+    row-gap: 5px;
+    width: 80%;
+  }
+
+  .login-container form input , .register-container form input{
+    outline: 0;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: rgb(241, 241, 241);
+  }
+
+  ::placeholder {
+    font-size: .8rem;
+  }
+
+    
+  .login-container  .login-options {
+    font-size: .65rem;
+    align-items: center;
+    width: 80%;
+  }
+
+  .login-option1 {
+    align-items: center;
+    display: flex;
+  }
+
+  .header2 {
+    display: none;
+  }
+  
+  .login-button, .register-button {
+    width: 80%;
+  }
+
+  .login-button button, .register-button button {
+    width: 100%;
+    padding: 8px;
+    font-size: .75rem;
+    border-radius: 4px;
+  }
+} 
+
+
+.display {
+  display: none;
+}
+
+.input-color1 {
+  border: red solid 2px;
+}
+
+.input-color2 {
+  border: green solid 2px;
+}

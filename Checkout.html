@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/checkout.css">
+  <link rel="stylesheet" href="styles/fox-shop.css">
+</head>
+<body>
+  <div class="page-navbar">
+    <div class="left-section">
+      <i class="fa-solid fa-bars bars-menu" aria-hidden="true"></i>
+      <a href="Fox-shop.html">
+        <h2 class="page-logo">
+          <span class="fox">Fox</span>-shop
+        </h2>
+      </a>
+      <div class="popup-menu display">
+        <ul>
+          <li><a href="Fox-shop.html">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>  
+      </div>
+    </div>
+    <div class="right-section">
+      <a href="#" class="wishlist-link">
+        <span class="like-quantity">6</span>
+        <i class="fa-solid fa-heart"></i>
+      </a>
+      <a href="#" class="checkout-link"> 
+        <span class="cart-quantity cart-quantity-display">0</span>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+      <a href="Dashboard.html" class="join-link">
+        <i class="fa-regular fa-user"></i>
+      </a>
+
+      <div class="hearder2">
+        <div class="cart-popup-container display">
+          <div class="cart-pop-up-header ">Cart(<span class="cart-quantity-display"></span>)</div>
+          <div class="cart-pop-up "></div>
+          <div class="cart-popup-options ">
+            <div class="subtotal-container">
+              <h4>Subtotal</h4>
+              <h4>$679.00</h4>
+            </div>
+            <div class="cart-popup-button">
+              <button class="clear-carts">Clear cart</button>
+              <a href="Checkout.html"><button class="go-to-checkout">Checkout</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="wishlist-popup-container display">
+          <div class="wishlist-header">Wishlist(<span class="like-quantity"></span>)</div>
+          <div class="wishlist-container"></div>
+          <div class="wishlist-options">
+            <button class="clear-wishlist">Clear List</button>
+            <button class="wishlist-link-btn">Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="checkout-header">
+    <div class="checkout-quantiy">
+      <h2>Checkout (<span class="cart-quantity-display"></span>)</h2>
+    </div>
+  </div>
+
+  <div class="checkout-body">
+    <div class="carted-item-container"></div>
+
+    <div class="order-summary">
+      <div class="order-summmary-text">
+        <h3>Order Summary</h3>
+      </div>
+
+      <div class="order-summary-body">
+        <div class="item-price-line">
+          <div>Items(<span class="cart-length">0</span>):</div>
+          <div class="product-total-price">$0.00</div>
+        </div>
+
+        <div class="shipping-handling-line">
+          <div>Shipping & handling:</div>
+          <div>$0.00</div>
+        </div>
+
+        <div class="first-total-line">
+          <div>Total before tax</div>
+          <div>$0.00</div>
+        </div>
+
+        <div class="estimate-tax">
+          <div>Estimated tax(10%)</div>
+          <div>$0.00</div>
+        </div>
+
+        <div class="single-line"></div>
+
+        <div class="order-total-cost">
+          <div>Order total:</div>
+          <div>$0.00</div>
+        </div>
+
+        <div class="pay-mode">
+          <div>Use PayPal</div>
+          <input type="checkbox">
+        </div>
+      </div>
+
+      <div class="place-order-div"><button class="place-order">Place your order</button></div>
+    </div>
+  </div>
+
+
+  <div class="product-grid display"></div>
+  <div class="image-slide-container display"><img src="" alt=""></div>
+  
+  <script type="module"  src="scripts/utils/controller.js"></script>
+ <script type="module" src="scripts/checkout.js"></script>
+</body>
+</html>
